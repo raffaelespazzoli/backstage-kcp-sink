@@ -59,3 +59,13 @@ to build the image
 ./mvnw clean package -Dquarkus.container-image.build=true
 docker push quay.io/raffaelespazzoli/backstage-kcp-sink:1.0
 ```
+
+using tilt
+
+```shell
+export repo=raffaelespazzoli
+oc new-project backstage-kcp-sink-test
+oc project backstage-kcp-sink-test
+tilt up
+```
+
