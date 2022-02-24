@@ -64,8 +64,8 @@ using tilt
 
 ```shell
 export repo=raffaelespazzoli
-oc new-project backstage-kcp-sink-test
-oc project backstage-kcp-sink-test
+oc new-project kcp
+oc project kcp
 tilt up
 ```
 
